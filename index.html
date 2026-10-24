@@ -3,32 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Надышим плоский живот — марафон</title>
-<meta name="description" content="Онлайн-марафон Татьяны Боган: 14 дней дыхательных практик по 10–15 минут для плоского живота, осанки и лёгкости. Без зала и инвентаря. Старт 1 ноября.">
+<title>Надышим плоский живот — проект</title>
+<meta name="description" content="Онлайн-проект Татьяны Боган: 14 дней дыхательных практик по 10–15 минут для плоского живота, осанки и лёгкости. Без зала и инвентаря. Старт 1 ноября.">
 <!-- превью ссылки в Telegram/Instagram -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://p5-2026.github.io/nadyshim/">
-<meta property="og:title" content="Надышим плоский живот — марафон Татьяны Боган">
+<meta property="og:title" content="Надышим плоский живот — проект Татьяны Боган">
 <meta property="og:description" content="14 дней, 10–15 минут в день, без зала и инвентаря. Старт 1 ноября.">
 <meta property="og:image" content="https://p5-2026.github.io/nadyshim/tatiana-sea.jpg">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%232F5D50'/><circle cx='50' cy='50' r='26' fill='%23F08A6C'/></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%237A1F2E'/><circle cx='50' cy='50' r='26' fill='%23F28C38'/></svg>">
 <script>document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#F6F3EC;
+    --bg:#FBF5EC;
     --surface:#FFFFFF;
-    --ink:#1F2A27;
-    --muted:#5C6B66;
-    --sage:#8FB8A4;
-    --sage-deep:#2F5D50;
-    --coral:#F08A6C;
-    --coral-deep:#D9694A;
-    --cta:#C04F33;        /* кнопки: белый текст читается (контраст ≥4.5) */
-    --cta-hover:#A8432A;
-    --line:#E3DED3;
+    --ink:#2A1A17;
+    --muted:#6B5A52;
+    --sage:#A4B07A;      /* олива */
+    --sage-deep:#7A1F2E; /* бордо */
+    --coral:#F28C38;     /* тыквенный */
+    --coral-deep:#D4561C;
+    --cta:#C2471A;        /* кнопки: белый текст читается (контраст ≥4.5) */
+    --cta-hover:#A33A14;
+    --line:#EADFD0;
     --radius:24px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -41,17 +41,17 @@
   section{padding:80px 0;scroll-margin-top:64px}
   .eyebrow{display:inline-block;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage-deep);margin-bottom:14px}
   .lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:620px}
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 32px;border-radius:999px;background:var(--cta);color:#fff;font-weight:700;font-size:17px;text-decoration:none;border:0;cursor:pointer;transition:background .25s,transform .25s,box-shadow .25s;box-shadow:0 10px 24px -10px rgba(192,79,51,.6)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 32px;border-radius:999px;background:var(--cta);color:#fff;font-weight:700;font-size:17px;text-decoration:none;border:0;cursor:pointer;transition:background .25s,transform .25s,box-shadow .25s;box-shadow:0 10px 24px -10px rgba(194,71,26,.55)}
   .btn:hover{background:var(--cta-hover);transform:translateY(-2px)}
   .btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--sage-deep);outline-offset:3px}
 
   /* липкая кнопка записи на телефоне */
   .sticky-cta{display:none}
   .btn-ghost{background:transparent;color:var(--sage-deep);box-shadow:none;border:2px solid var(--sage)}
-  .btn-ghost:hover{background:var(--sage);color:#fff}
+  .btn-ghost:hover{background:var(--sage-deep);border-color:var(--sage-deep);color:#fff}
 
   /* NAV */
-  nav{position:sticky;top:0;z-index:10;background:rgba(246,243,236,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav{position:sticky;top:0;z-index:10;background:rgba(251,245,236,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
   .logo{font-family:Unbounded;font-weight:800;font-size:15px;color:var(--sage-deep);text-decoration:none}
   nav .btn{min-height:42px;padding:0 20px;font-size:15px}
@@ -68,7 +68,7 @@
 
   /* видео тренера + карточка результата */
   .hero-media{position:relative;width:100%;max-width:360px;margin:0 auto}
-  .hero-media video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:32px;box-shadow:0 30px 60px -30px rgba(47,93,80,.55)}
+  .hero-media video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:32px;box-shadow:0 30px 60px -30px rgba(122,31,46,.4)}
   .result-card{position:absolute;left:-44px;bottom:72px;background:var(--surface);border-radius:20px;padding:14px 18px;box-shadow:0 16px 40px -14px rgba(31,42,39,.35);display:grid;gap:2px;font-weight:600;font-size:15px;animation:float 5s ease-in-out infinite}
   .result-num{font-family:Unbounded;font-weight:800;font-size:28px;color:var(--coral-deep)}
   .result-card small{color:var(--muted);font-weight:500;font-size:13px}
@@ -87,15 +87,22 @@
   .pain::before{content:"—";color:var(--coral);font-weight:800;margin-right:8px}
 
   /* HOW */
-  .how{background:var(--sage-deep);color:#EAF2EE;border-radius:40px;margin:0 12px}
+  .how{background:var(--sage-deep);color:#F8E9E4;border-radius:40px;margin:0 12px}
   .how h2,.how .eyebrow{color:#fff}
-  .how .lead{color:#C4D8CF}
+  .how .lead{color:#EBC9C2}
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
   .steps.four{grid-template-columns:repeat(2,1fr)}
   .step{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:28px}
   .step .n{font-family:Unbounded;font-weight:800;font-size:34px;color:var(--coral);display:block;margin-bottom:10px}
   .step h3{color:#fff}
 
+  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+  .cyl{list-style:none;display:grid;gap:6px;margin-top:10px;color:var(--muted)}
+  .cyl li{padding-left:18px;position:relative}.cyl li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--coral)}
+  /* осенние листья */
+  .hero{position:relative;overflow:hidden}
+  .leaf{position:absolute;pointer-events:none;height:auto;opacity:.9;z-index:0}
+  .hero .wrap{position:relative;z-index:1}
   /* FOR WHOM */
   .two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px}
   .box{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
@@ -112,15 +119,15 @@
   /* отзывы */
   .reviews{columns:3 280px;column-gap:16px;margin-top:36px}
   .review{break-inside:avoid;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:16px}
-  .review .res{display:inline-block;background:#E4F0EA;color:var(--sage-deep);font-weight:700;font-size:14px;border-radius:999px;padding:4px 12px;margin-bottom:12px}
+  .review .res{display:inline-block;background:#F7E6D2;color:var(--sage-deep);font-weight:700;font-size:14px;border-radius:999px;padding:4px 12px;margin-bottom:12px}
   .review p{font-size:16px}
   .review b{display:block;margin-top:12px;font-size:15px;color:var(--muted)}
 
   /* PRICE */
   .price-card{max-width:560px;margin:36px auto 0;background:var(--surface);border:2px solid var(--sage);border-radius:32px;padding:40px 36px;text-align:center}
   .price{font-family:Unbounded;font-weight:800;font-size:clamp(40px,7vw,56px);color:var(--sage-deep);margin:10px 0 6px}
-  .seats{display:inline-block;margin-top:14px;background:#E4F0EA;color:var(--sage-deep);font-weight:700;font-size:15px;border-radius:999px;padding:6px 16px}
-  .discount{display:grid;gap:6px;background:#FFF0EA;border-radius:18px;padding:16px 20px;margin-top:20px;text-align:left;font-size:16px}
+  .seats{display:inline-block;margin-top:14px;background:#F7E6D2;color:var(--sage-deep);font-weight:700;font-size:15px;border-radius:999px;padding:6px 16px}
+  .discount{display:grid;gap:6px;background:#FDEBDC;border-radius:18px;padding:16px 20px;margin-top:20px;text-align:left;font-size:16px}
   .discount b{color:var(--coral-deep)}
   .price-card ul{list-style:none;text-align:left;display:grid;gap:10px;margin:26px 0 30px}
   .price-card li::before{content:"✓ ";color:var(--sage-deep);font-weight:800}
@@ -154,7 +161,8 @@
     .coach-tag{right:-8px}
     .join{grid-template-columns:1fr}
     .steps,.steps.four{grid-template-columns:1fr}
-    .pain-grid,.two{grid-template-columns:1fr}
+    .pain-grid,.two,.three{grid-template-columns:1fr}
+    .leaf.hide-m{display:none}
     .how{border-radius:28px;margin:0 8px}
     .coach-photos{max-width:300px}
     .coach-small{right:-12px;bottom:-30px}
@@ -181,13 +189,18 @@
 </nav>
 
 <header class="hero" id="top">
+  <svg class="leaf " aria-hidden="true" viewBox="0 0 100 120" style="width:54px;top:22px;right:5%;transform:rotate(28deg)"><path d="M50 4C82 26 90 70 50 104C10 70 18 26 50 4Z" fill="#F28C38"/><path d="M50 14V116M50 46L32 32M50 46L68 32M50 68L28 54M50 68L72 54" stroke="#FBF5EC" stroke-width="3" stroke-linecap="round" fill="none" opacity=".7"/></svg>
+  <svg class="leaf hide-m" aria-hidden="true" viewBox="0 0 100 120" style="width:34px;top:120px;right:1.5%;transform:rotate(-35deg)"><path d="M50 4C82 26 90 70 50 104C10 70 18 26 50 4Z" fill="#7A1F2E"/><path d="M50 14V116M50 46L32 32M50 46L68 32M50 68L28 54M50 68L72 54" stroke="#FBF5EC" stroke-width="3" stroke-linecap="round" fill="none" opacity=".7"/></svg>
+  <svg class="leaf hide-m" aria-hidden="true" viewBox="0 0 100 120" style="width:46px;bottom:24px;left:2%;transform:rotate(-18deg)"><path d="M50 4C82 26 90 70 50 104C10 70 18 26 50 4Z" fill="#D4561C"/><path d="M50 14V116M50 46L32 32M50 46L68 32M50 68L28 54M50 68L72 54" stroke="#FBF5EC" stroke-width="3" stroke-linecap="round" fill="none" opacity=".7"/></svg>
+  <svg class="leaf hide-m" aria-hidden="true" viewBox="0 0 100 120" style="width:30px;bottom:90px;left:5.5%;transform:rotate(40deg)"><path d="M50 4C82 26 90 70 50 104C10 70 18 26 50 4Z" fill="#A4B07A"/><path d="M50 14V116M50 46L32 32M50 46L68 32M50 68L28 54M50 68L72 54" stroke="#FBF5EC" stroke-width="3" stroke-linecap="round" fill="none" opacity=".7"/></svg>
+
   <div class="wrap">
     <div>
-      <span class="eyebrow">Онлайн-марафон</span>
+      <span class="eyebrow">Осенний онлайн-проект</span>
       <h1>Надышим<br><span>плоский</span> живот</h1>
-      <p class="lead">Никакого насилия над телом. Уберём выпирающий живот через правильное дыхание, осанку и работу с внутренним давлением — живот подтянется сам.</p>
+      <p class="lead">Никакого насилия над телом. Уберём выпирающий живот с помощью правильного дыхания, контроля и стабилизации тела.</p>
       <div class="hero-cta">
-        <a class="btn" href="#price">Хочу на марафон</a>
+        <a class="btn" href="#price">Хочу в проект</a>
         <a class="btn btn-ghost" href="#how">Как это работает</a>
       </div>
       <div class="meta">
@@ -245,12 +258,13 @@
   <div class="wrap reveal">
     <span class="eyebrow">Важно знать</span>
     <h2>Почему мы дышим, а не качаем пресс</h2>
-    <p class="lead">Скручивания и подъёмы ног при диастазе (расхождении мышц живота) запрещены — они только сильнее растягивают белую линию. А о диастазе многие даже не знают. Поэтому на старте делаем тест на диастаз.</p>
-    <div class="two">
-      <div class="box"><h3>Дыхание диафрагмой</h3><p style="color:var(--muted)">Учимся управлять давлением внутри живота, чтобы оно не «давило» вперёд, а помогало мышцам собраться.</p></div>
+    <p class="lead">Скручивания и подъёмы ног при диастазе (расхождении мышц живота) запрещены — они только сильнее растягивают белую линию, которая должна соединять и удерживать мышцы, а также распределять нагрузку. А о диастазе многие даже не знают. Поэтому на старте делаем тест на диастаз.</p>
+    <div class="three">
+      <div class="box"><h3>Дыхание диафрагмой</h3><p style="color:var(--muted)">Учимся управлять давлением внутри живота, чтобы оно не «давило» вперёд, а помогало мышцам собраться, а также снизить стресс и получить глубокий восстанавливающий сон.</p></div>
       <div class="box"><h3>Корсет, который у вас уже есть</h3><p style="color:var(--muted)">Поперечная мышца обхватывает талию по кругу. Её не нужно качать — её нужно разбудить.</p></div>
+      <div class="box"><h3>Мышцы тазового дна</h3><p style="color:var(--muted)">Участвуют в работе единой слаженной системы. Собираем свой пояснично-тазовый цилиндр:</p>
+        <ul class="cyl"><li>диафрагма образует его «крышку»;</li><li>мышцы тазового дна — «дно»;</li><li>поперечная мышца и глубокие мышцы спины формируют его «стены».</li></ul></div>
     </div>
-    <p class="lead" style="margin-top:28px">И это не только про живот: дыхание — это ещё и мышцы тазового дна, спокойствие при стрессе и сон.</p>
   </div>
 </section>
 
@@ -290,7 +304,7 @@
     <h2>Подойдёт вам, если…</h2>
     <div class="two">
       <div class="box yes">
-        <h3>Марафон для вас</h3>
+        <h3>Проект для вас</h3>
         <ul>
           <li>Хотите подтянутый живот без изнурительного спорта</li>
           <li>Восстанавливаетесь после родов (с разрешения врача)</li>
@@ -347,12 +361,12 @@
 
 <section id="join">
   <div class="wrap reveal">
-    <span class="eyebrow">Как попасть на марафон</span>
+    <span class="eyebrow">Как попасть в проект</span>
     <h2>Всего 3 шага</h2>
     <div class="join">
-      <div><h3>Нажмите «Хочу на марафон»</h3><p>Откроется Telegram-бот. Напишите, как вас зовут, — это минута.</p></div>
+      <div><h3>Нажмите «Хочу в проект»</h3><p>Откроется Telegram-бот. Напишите, как вас зовут, — это минута.</p></div>
       <div><h3>Оплатите участие</h3><p>Бот пришлёт реквизиты. Отправьте ему скрин или чек оплаты.</p></div>
-      <div><h3>Входите в чат марафона</h3><p>После подтверждения бот пришлёт ссылку в закрытый канал и чат. 1 ноября — старт!</p></div>
+      <div><h3>Входите в чат проекта</h3><p>После подтверждения бот пришлёт ссылку в закрытый канал и чат. 1 ноября — старт!</p></div>
     </div>
   </div>
 </section>
@@ -364,14 +378,14 @@
       <h2>Начнём дышать вместе</h2>
     </div>
     <div class="price-card">
-      <h3>Марафон «Надышим плоский живот»</h3>
+      <h3>Проект «Надышим плоский живот»</h3>
       <div class="price">60 BYN</div>
       <p style="color:var(--muted)">при записи до 31 октября · с 1 ноября — 70 BYN</p>
       <p class="seats">Всего 20 мест — чтобы ответить каждой лично</p>
       <div class="discount">
         <b>49 BYN — со скидкой, если вы:</b>
         <span>👭 приходите с подругой или сестрой</span>
-        <span>📲 размещаете сторис о марафоне</span>
+        <span>📲 размещаете сторис о проекте</span>
         <small style="color:var(--muted)">Скидки не суммируются.</small>
       </div>
       <ul>
@@ -381,8 +395,8 @@
         <li>Доступ к материалам навсегда — всё остаётся в чате</li>
         <li>🎁 Самым активным — видеотренировка на 20 минут: расслабление всего тела и снятие зажимов</li>
       </ul>
-      <a class="btn" data-bot href="https://t.me/TatianaBOGAN" target="_blank" rel="noopener">Хочу на марафон</a>
-      <p style="font-size:14px;color:var(--muted);margin-top:12px">Кнопка откроет Telegram: заявка → реквизиты → доступ в канал марафона</p>
+      <a class="btn" data-bot href="https://t.me/TatianaBOGAN" target="_blank" rel="noopener">Хочу в проект</a>
+      <p style="font-size:14px;color:var(--muted);margin-top:12px">Кнопка откроет Telegram: заявка → реквизиты → доступ в канал проекта</p>
     </div>
   </div>
 </section>
@@ -395,21 +409,24 @@
     <details><summary>Сколько времени в день занимает?</summary><p>10–15 минут. Занимаетесь в любое удобное время.</p></details>
     <details><summary>У меня нормальный вес — мне подойдёт?</summary><p>Да. Здесь важен не вес. Живот может выпирать и при небольшом весе, когда глубокие мышцы «спят».</p></details>
     <details><summary>Подойдёт ли новичку?</summary><p>Да, начинаем с основ и разбираем технику пошагово.</p></details>
-    <details><summary>Что останется после марафона?</summary><p>Всё: видео упражнений и материалы остаются в чате навсегда, можно возвращаться к ним в любое время.</p></details>
+    <details><summary>Что останется после проекта?</summary><p>Всё: видео упражнений и материалы остаются в чате навсегда, можно возвращаться к ним в любое время.</p></details>
     <details><summary>Что если я пропущу день?</summary><p>Ничего страшного: все видео и задания остаются в чате навсегда — догоните в удобное время.</p></details>
     <details><summary>Можно присоединиться после старта?</summary><p>Да, если остались места. С 1 ноября участие стоит 70 BYN, все материалы предыдущих дней будут в чате.</p></details>
-    <details><summary>Как оплатить?</summary><p>Переводом на карту — реквизиты пришлёт бот после заявки. Отправьте ему чек, и после подтверждения вы получите ссылку в канал марафона.</p></details>
+    <details><summary>Как оплатить?</summary><p>Переводом на карту — реквизиты пришлёт бот после заявки. Отправьте ему чек, и после подтверждения вы получите ссылку в канал проекта.</p></details>
     <details><summary>Можно после родов?</summary><p>Да, но только после разрешения вашего врача.</p></details>
-    <details><summary>Где проходят занятия?</summary><p>Онлайн, в закрытом Telegram-канале марафона и чате участниц.</p></details>
+    <details><summary>Где проходят занятия?</summary><p>Онлайн, в закрытом Telegram-канале проекта и чате участниц.</p></details>
   </div>
 </section>
 
-<section class="final">
+<section class="final" style="position:relative;overflow:hidden">
+  <svg class="leaf " aria-hidden="true" viewBox="0 0 100 120" style="width:46px;top:30px;left:7%;transform:rotate(-22deg)"><path d="M50 4C82 26 90 70 50 104C10 70 18 26 50 4Z" fill="#D4561C"/><path d="M50 14V116M50 46L32 32M50 46L68 32M50 68L28 54M50 68L72 54" stroke="#FBF5EC" stroke-width="3" stroke-linecap="round" fill="none" opacity=".7"/></svg>
+  <svg class="leaf " aria-hidden="true" viewBox="0 0 100 120" style="width:36px;bottom:40px;right:8%;transform:rotate(30deg)"><path d="M50 4C82 26 90 70 50 104C10 70 18 26 50 4Z" fill="#F28C38"/><path d="M50 14V116M50 46L32 32M50 46L68 32M50 68L28 54M50 68L72 54" stroke="#FBF5EC" stroke-width="3" stroke-linecap="round" fill="none" opacity=".7"/></svg>
+
   <div class="wrap reveal">
     <h2>Один вдох — и вы уже начали</h2>
-    <p class="lead">Присоединяйтесь к марафону и почувствуйте, как живот откликается на дыхание.</p>
-    <a class="btn" href="#price">Хочу на марафон</a>
-    <p class="note">Марафон не заменяет консультацию врача. При хронических заболеваниях, беременности и после операций занимайтесь только с разрешения специалиста.</p>
+    <p class="lead">Присоединяйтесь к проекту и почувствуйте, как живот откликается на дыхание.</p>
+    <a class="btn" href="#price">Хочу в проект</a>
+    <p class="note">Проект не заменяет консультацию врача. При хронических заболеваниях, беременности и после операций занимайтесь только с разрешения специалиста.</p>
   </div>
 </section>
 
@@ -417,7 +434,7 @@
   © Татьяна Боган · <a href="https://instagram.com/tatianabogan_3f" target="_blank" rel="noopener" style="color:inherit">@tatianabogan_3f</a>
 </footer>
 
-<div class="sticky-cta" id="stickyCta"><a class="btn" href="#price">Хочу на марафон · 60 BYN</a></div>
+<div class="sticky-cta" id="stickyCta"><a class="btn" href="#price">Хочу в проект · 60 BYN</a></div>
 
 <script>
   // Ссылка на Telegram-бота. Пока бота нет — ведёт в личку Татьяны.
